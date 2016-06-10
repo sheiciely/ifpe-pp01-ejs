@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html  lang="pt-br">
+	<head><title>Cadastrar Professor</title>
+	<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+			<link rel="stylesheet" type="text/css" href="../css/menupaginas.css"/>
+				<link rel="stylesheet" type="text/css" href="../css/formlunoprof.css"/>
+					<script language="JavaScript" type="text/javascript" src="../js/mascara_validacao.js"></script>
+
+	</head>
+
+	<body>
+
+<div id="interface">
+			
+	<!--CABEÇALHO-->	
+	<header id="cabecalho">
+		<hgroup>
+			<h1>Sistema de Gestão Acadêmica - ACAD</h1>
+				<img id="icone" src="../imagens/secretaria.png">
+		
+			<h2>Instituto Federal de Ciência e Técnologia de Pernambuco</h2>
+		</hgroup>
+	</header>
+	
+		<!--FIMCABEÇALHO-->	
+		
+	
+		<section id="corpo1">
+			<nav id="menupag">
+			<ol>
+<li><a href="../index.html">Home</a></li>
+<li><a href="cadastrar_cursos_disciplinas.html">Cadastrar Cursos e Disciplinas</a></li>
+<li><a href="emitir_historico.html">Emitir Histórico</a></li>
+<li><a href="realizar_matricula.html">Realizar Matrícula</a></li>
+			</ol>
+			</nav>
+	</section>		
+
+	
+	
+	
+	
+		<form action="../cadastro.html" name="cadastro" method="post" class="contact">	
+		<!-- DADOS PESSOAIS-->
+<fieldset class="contact-inner">
+ <legend><h1>Dados Pessoais</h1></legend>
+ <table cellspacing="10">
+  <tr>
+   <td>
+   <p class="contact-input">
+    <label for="cNome">Nome: </label>
+	</p>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="tNome" id="cNome">
+	</p>
+   </td>
+   <td>
+   <p class="contact-input">
+    <label for="cSobrenome">Sobrenome: </label>
+	</p>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="tSobrenome" id=cSobrenome>
+	</p>
+   </td>
+  
+  <td>
+   <p class="contact-input">
+    <label for="cNascimento">Nascimento: </label>
+	</p>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="date" name="tNascimento" id="cNascimento" onKeyPress="MascaraData(form1.data);"
+	maxlength="10" onBlur= "ValidaDataform1.data);">
+	</p>
+   </td>
+
+  
+  <tr>
+   
+   
+   <td>
+   <p class="contact-input">
+   <label for="estadocivil">Sexo:</label>
+   </td>
+   
+   <td align="left">
+   <p class="contact-input">
+   <select name="sexo" class="select" >
+            <option value="" selected></option>
+    <option value="ac">Feminino</option> 
+    <option value="al">Masculino</option> 
+    </select>
+	</p>
+   
+   <td>
+   <p class="contact-input">
+   <label for="estadocivil">Relacionamento</label>
+   </td>
+   
+   <td align="left">
+   <p class="contact-input">
+   <select name="estadocivil" class="select" >
+            <option value="" selected></option>
+    <option value="ac">Solteiro(a)</option> 
+    <option value="al">Casado(a)</option> 
+    <option value="am">Divorciado(a)</option> 
+    <option value="ap">Viúvo(a)</option> 
+    <option value="ba">Outros</option> 
+    </select>
+	</p>
+	
+	
+	<td>
+   <p class="contact-input">
+   <label for="cNumFilhos">Nº Filhos</label>
+   </td>
+   
+   <td align="left">
+   <p class="contact-input">
+   <input type="number" name="tFilho" id="cNumFilhos" size="10" min="0" max="30" placeholder=0>
+	</p>
+	
+  </tr>
+  
+  <tr>
+  <td align="left">
+   <p class="contact-input">
+		<label for="cTel">Telefone: </label>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="tTel" id="cTel" onKeyPress="MascaraTelefone(form1.tel);" 
+maxlength="14"  onBlur="ValidaTelefone(form1.tel);"> 
+   </p>
+   </td>
+  
+  <td align="left">
+   <p class="contact-input">
+		<label for="cCel">Celular: </label>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="tCel" id="cCel" onKeyPress="MascaraTelefone(this);" maxlength="14"  onBlur="ValidaTelefone(this);">
+   </p>
+   </td>
+  
+  <td>
+   <p class="contact-input">
+    <label for="email">E-mail: </label>
+	</p>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="tEmail" c>
+	</p>
+   </td>
+  
+  <tr>
+   <td>
+   
+   <p class="contact-input">
+    <label for="rg">RG: </label>
+	</p>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="rg" id="rg" size="30" maxlength="12" onKeyPress="MascaraRG(form1.rg);" />
+</p>	
+   </td>
+   
+   <td>
+   
+   <p class="contact-input">
+    <label for="expedicao">Expedição:</label>
+	</p>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="date" name="expedicao" id="expedicao">
+</p>	
+   </td>
+
+   <td>
+   
+   <p class="contact-input">
+    <label for="rg">Orgão Expedidor: </label>
+	</p>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="orgao" id="orgao" size="13" maxlength="13">
+</p>	
+   </td> 
+   
+<tr>
+ 
+   <td>
+   <p class="contact-input">
+    <label>CPF:</label>
+	</p>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="cpf" onBlur="ValidarCPF(form1.cpf);" onKeyPress="MascaraCPF(form1.cpf);" maxlength="14">
+	</p>
+   </td>
+   
+   
+   <td>
+   <p class="contact-input">
+    <label for="nascido">Naturalidade: </label>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="dia" id="nascido"> 
+   </p>
+   </td>
+   
+   
+   <td>
+   <p class="contact-input">
+    <label>Nacionalidade:</label>
+	</p>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="nacionalidade" id="nacionalidade" size="9" maxlength="9">
+	</p>
+   </td>
+
+ 
+  </tr>
+ </table>
+</fieldset>
+
+<br>
+
+<!-- ENDEREÇO -->
+<fieldset class="contact-inner">
+ <legend><h1>Dados de Endereço</h1></legend>
+ <table cellspacing="10">
+
+ 
+   <td>
+   <p class="contact-input">
+    <label for="cidade">Cidade: </label>
+	</p>
+   </td>
+ 
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="cidade">
+	</p>
+   </td>
+  
+  <td>
+   <p class="contact-input">
+    <label for="cep">CEP: </label>
+	</p>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="cep" onKeyPress="MascaraCep(form1.cep)"
+	maxlength="10" onBlur="ValidaCep(form1.cep)">
+	</p>
+   </td>
+ 
+ <td>
+   <p class="contact-input">
+    <label for="estado">Estado:</label>
+	</p>
+   
+   <td align="left">
+    <select name="estado" class="select">
+            <option value="" selected></option>
+    <option value="ac">Acre</option> 
+    <option value="al">Alagoas</option> 
+    <option value="am">Amazonas</option> 
+    <option value="ap">Amapá</option> 
+    <option value="ba">Bahia</option> 
+    <option value="ce">Ceará</option> 
+    <option value="df">Distrito Federal</option> 
+    <option value="es">Espírito Santo</option> 
+    <option value="go">Goiás</option> 
+    <option value="ma">Maranhão</option> 
+    <option value="mt">Mato Grosso</option> 
+    <option value="ms">Mato Grosso do Sul</option> 
+    <option value="mg">Minas Gerais</option> 
+    <option value="pa">Pará</option> 
+    <option value="pb">Paraíba</option> 
+    <option value="pr">Paraná</option> 
+    <option value="pe">Pernambuco</option> 
+    <option value="pi">Piauí</option> 
+    <option value="rj">Rio de Janeiro</option> 
+    <option value="rn">Rio Grande do Norte</option> 
+    <option value="ro">Rondônia</option> 
+    <option value="rs">Rio Grande do Sul</option> 
+    <option value="rr">Roraima</option> 
+    <option value="sc">Santa Catarina</option> 
+    <option value="se">Sergipe</option> 
+    <option value="sp">São Paulo</option> 
+    <option value="to">Tocantins</option> 
+   </select>
+   </p>
+   </td>
+ 
+ <tr>
+ 
+ <td>
+   <p class="contact-input">
+    <label for="bairro">Bairro: </label>
+	</p>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="bairro">
+	</p>
+   </td>
+ 
+   <td>
+   <p class="contact-input">
+    <label for="rua">Rua:</label>
+	</p>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="rua">
+	</p>
+   </td>
+   <td>
+   <p class="contact-input">
+    <label for="numero">Numero:</label>
+	</p>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="number" name="tNum" id="cNum"size="4" min="0" max="999" placeholder="0">
+	</p>
+   </td>
+  </tr>
+   </table>
+</fieldset>
+<br />
+
+
+
+
+
+
+
+
+<!-- HISTÓRICO ACADÊMICO -->
+<fieldset class="contact-inner">
+ <legend><h1>Histórico Acadêmico</h1></legend>
+ <table cellspacing="10">
+  
+  <th>Formação 1</th><tr>
+  <td>
+   <p class="contact-input">
+    <label for="nivel">Formação:</label>
+	</p>
+   
+   <td align="left">
+    <select name="nivel" class="select">
+            <option value="" selected></option>
+    <option value="MED">Médio</option> 
+    <option value="GRA">Graduação</option> 
+    <option value="TECL">Tecnologo</option> 
+    <option value="POS">Pós-Graduação</option> 
+    <option value="MES">Mestrado</option> 
+    <option value="DOU">Doutorado</option>
+	<option value="MBA">MBA</option>
+	</select>
+	</p>
+	</td>
+	
+	<td>
+   <p class="contact-input">
+    <label for="curso">Instituição: </label>
+	</p>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="instituicao" id="instituicao">
+	</p>
+   </td>
+   
+   
+   <td>
+   <p class="contact-input">
+    <label for="curso">Curso: </label>
+	</p></td>
+	
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="curso" id="curso">
+	</p>
+   </td>
+	
+	
+	<tr>
+	
+	<td>
+   <p class="contact-input">
+    <label for="estado">Estado:</label>
+	</p>
+	
+   <td align="left">
+    <select name="estado" class="select">
+            <option value="" selected></option>
+    <option value="ac">Acre</option> 
+    <option value="al">Alagoas</option> 
+    <option value="am">Amazonas</option> 
+    <option value="ap">Amapá</option> 
+    <option value="ba">Bahia</option> 
+    <option value="ce">Ceará</option> 
+    <option value="df">Distrito Federal</option> 
+    <option value="es">Espírito Santo</option> 
+    <option value="go">Goiás</option> 
+    <option value="ma">Maranhão</option> 
+    <option value="mt">Mato Grosso</option> 
+    <option value="ms">Mato Grosso do Sul</option> 
+    <option value="mg">Minas Gerais</option> 
+    <option value="pa">Pará</option> 
+    <option value="pb">Paraíba</option> 
+    <option value="pr">Paraná</option> 
+    <option value="pe">Pernambuco</option> 
+    <option value="pi">Piauí</option> 
+    <option value="rj">Rio de Janeiro</option> 
+    <option value="rn">Rio Grande do Norte</option> 
+    <option value="ro">Rondônia</option> 
+    <option value="rs">Rio Grande do Sul</option> 
+    <option value="rr">Roraima</option> 
+    <option value="sc">Santa Catarina</option> 
+    <option value="se">Sergipe</option> 
+    <option value="sp">São Paulo</option> 
+    <option value="to">Tocantins</option> 
+   </select>
+   </p>
+   </td>
+	
+	<td>
+   <p class="contact-input">
+    <label for="cidade">Cidade: </label>
+	</p></td>
+	
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="cidade" id="cidade">
+	</p>
+   </td>
+	
+   <td>
+   <p class="contact-input">
+    <label for="conclusao">Ano Conclusão: </label>
+	</p></td>
+	
+   <td align="left">
+   <p class="contact-input">
+    <input type="date" name="conclusao" onKeyPress="MascaraData(form1.data);"
+	maxlength="10" onBlur= "ValidaDataform1.data);">
+	</p>
+   </td>
+   </tr>
+   <tr>
+   
+   
+   <th>Formação 2</th><tr>
+   <tr>
+  <td>
+   <p class="contact-input">
+    <label for="nivel">Formação:</label>
+	</p>
+   
+   <td align="left">
+    <select name="nivel" class="select">
+            <option value="" selected></option>
+    <option value="MED">Médio</option> 
+    <option value="GRA">Graduação</option> 
+    <option value="TECL">Tecnologo</option> 
+    <option value="POS">Pós-Graduação</option> 
+    <option value="MES">Mestrado</option> 
+    <option value="DOU">Doutorado</option>
+	<option value="MBA">MBA</option>
+	</select>
+	</p>
+	</td>
+	
+	<td>
+   <p class="contact-input">
+    <label for="curso">Instituição: </label>
+	</p>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="instituicao" id="instituicao">
+	</p>
+   </td>
+   
+   
+   <td>
+   <p class="contact-input">
+    <label for="curso">Curso: </label>
+	</p></td>
+	
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="curso" id="curso">
+	</p>
+   </td>
+	</tr>
+	
+	<tr>
+	
+	<td>
+   <p class="contact-input">
+    <label for="estado">Estado:</label>
+	</p>
+	
+   <td align="left">
+    <select name="estado" class="select">
+            <option value="" selected></option>
+    <option value="ac">Acre</option> 
+    <option value="al">Alagoas</option> 
+    <option value="am">Amazonas</option> 
+    <option value="ap">Amapá</option> 
+    <option value="ba">Bahia</option> 
+    <option value="ce">Ceará</option> 
+    <option value="df">Distrito Federal</option> 
+    <option value="es">Espírito Santo</option> 
+    <option value="go">Goiás</option> 
+    <option value="ma">Maranhão</option> 
+    <option value="mt">Mato Grosso</option> 
+    <option value="ms">Mato Grosso do Sul</option> 
+    <option value="mg">Minas Gerais</option> 
+    <option value="pa">Pará</option> 
+    <option value="pb">Paraíba</option> 
+    <option value="pr">Paraná</option> 
+    <option value="pe">Pernambuco</option> 
+    <option value="pi">Piauí</option> 
+    <option value="rj">Rio de Janeiro</option> 
+    <option value="rn">Rio Grande do Norte</option> 
+    <option value="ro">Rondônia</option> 
+    <option value="rs">Rio Grande do Sul</option> 
+    <option value="rr">Roraima</option> 
+    <option value="sc">Santa Catarina</option> 
+    <option value="se">Sergipe</option> 
+    <option value="sp">São Paulo</option> 
+    <option value="to">Tocantins</option> 
+   </select>
+   </p>
+   </td>
+	
+	<td>
+   <p class="contact-input">
+    <label for="cidade">Cidade: </label>
+	</p></td>
+	
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="cidade" id="cidade">
+	</p>
+   </td>
+	
+   <td>
+   <p class="contact-input">
+    <label for="conclusao">Ano Conclusão: </label>
+	</p></td>
+	
+   <td align="left">
+   <p class="contact-input">
+    <input type="date" name="conclusao" onKeyPress="MascaraData(form1.data);"
+	maxlength="10" onBlur= "ValidaDataform1.data);">
+	</p>
+   </td>
+   <tr/>
+   <tr>
+   
+   
+   <th>Formação 3</th><tr>
+  <td>
+   <p class="contact-input">
+    <label for="nivel">Formação:</label>
+	</p>
+   
+   
+   <td align="left">
+    <select name="nivel" class="select">
+            <option value="" selected></option>
+    <option value="MED">Médio</option> 
+    <option value="GRA">Graduação</option> 
+    <option value="TECL">Tecnologo</option> 
+    <option value="POS">Pós-Graduação</option> 
+    <option value="MES">Mestrado</option> 
+    <option value="DOU">Doutorado</option>
+	<option value="MBA">MBA</option>
+	</select>
+	</p>
+	</td>
+	
+	<td>
+   <p class="contact-input">
+    <label for="curso">Instituição: </label>
+	</p>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="instituicao" id="instituicao">
+	</p>
+   </td>
+   
+   
+   <td>
+   <p class="contact-input">
+    <label for="curso">Curso: </label>
+	</p></td>
+	
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="curso" id="curso">
+	</p>
+   </td>
+	
+	</tr>
+	<tr>
+	
+	<td>
+   <p class="contact-input">
+    <label for="estado">Estado:</label>
+	</p>
+	
+   
+   <td align="left">
+    <select name="estado" class="select">
+            <option value="" selected></option>
+    <option value="ac">Acre</option> 
+    <option value="al">Alagoas</option> 
+    <option value="am">Amazonas</option> 
+    <option value="ap">Amapá</option> 
+    <option value="ba">Bahia</option> 
+    <option value="ce">Ceará</option> 
+    <option value="df">Distrito Federal</option> 
+    <option value="es">Espírito Santo</option> 
+    <option value="go">Goiás</option> 
+    <option value="ma">Maranhão</option> 
+    <option value="mt">Mato Grosso</option> 
+    <option value="ms">Mato Grosso do Sul</option> 
+    <option value="mg">Minas Gerais</option> 
+    <option value="pa">Pará</option> 
+    <option value="pb">Paraíba</option> 
+    <option value="pr">Paraná</option> 
+    <option value="pe">Pernambuco</option> 
+    <option value="pi">Piauí</option> 
+    <option value="rj">Rio de Janeiro</option> 
+    <option value="rn">Rio Grande do Norte</option> 
+    <option value="ro">Rondônia</option> 
+    <option value="rs">Rio Grande do Sul</option> 
+    <option value="rr">Roraima</option> 
+    <option value="sc">Santa Catarina</option> 
+    <option value="se">Sergipe</option> 
+    <option value="sp">São Paulo</option> 
+    <option value="to">Tocantins</option> 
+   </select>
+   </p>
+   </td>
+	
+	<td>
+   <p class="contact-input">
+    <label for="cidade">Cidade: </label>
+	</p></td>
+	
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="cidade" id="cidade">
+	</p>
+   </td>
+	
+   <td>
+   <p class="contact-input">
+    <label for="conclusao">Ano Conclusão: </label>
+	</p></td>
+	
+   <td align="left">
+   <p class="contact-input">
+    <input type="date" name="conclusao" onKeyPress="MascaraData(form1.data);"
+	maxlength="10" onBlur= "ValidaDataform1.data);">
+	</p>
+   </td>
+ 
+   </tr>
+	
+   
+
+ </table>
+<br>
+</fieldset>
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- DADOS DE LOGIN -->
+<fieldset class="contact-inner">
+ <legend><h1>Dados de login</h1></legend>
+ <table cellspacing="10">
+  
+  
+  <td>
+   <p class="contact-input">
+    <label for="login">Login de usuário: </label>
+	</p>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="text" name="login">
+	</p>
+   </td>
+   
+   <td>
+   <p class="contact-input">
+    <label for="imagem">Imagem de perfil:</label>
+	</p>
+   </td>
+   <td>
+   <p class="contact-input">
+    <input type="file" name="imagem" >
+	</p>
+
+   </td>
+   
+ 
+   <tr>
+  
+   <td>
+   <p class="contact-input">
+    <label for="cEmail">E-mail: </label>
+	</p>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="email" name="tEmail" id="cEmail">
+	</p>
+   </td>
+
+   <td>
+   <p class="contact-input">
+    <label for="matricula">Matricula: </label>
+	</p>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="matricula" name="tMatricula" id="cMatricula">
+	</p>
+   </td>
+  </tr>
+  <tr>
+  
+  <td>
+   <p class="contact-input">
+    <label for="pass">Senha: </label>
+	</p>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="password" name="tPass" id="cPass">
+	</p>
+   </td>
+  
+  
+  
+  
+  
+  
+  
+  
+   <td>
+   <p class="contact-input">
+    <label for="passconfirm">Confirme a senha: </label>
+	</p>
+   </td>
+   <td align="left">
+   <p class="contact-input">
+    <input type="password" name="tPassconfirm" id="cPassconfirm">
+	</p>
+   </td>
+  </tr>
+ </table>
+<br>
+
+
+<p class="contact-input">
+<input type="submit" name="envia" value="Enviar">
+</p>
+
+<p class="contact-input">
+<input type="reset" value="Limpar">
+</p>
+</fieldset>
+  </form>
+  
+  
+  
+  
+   <footer class="about">
+
+<p>Copyright &copy; 2016 - by EJS <br> Todos os direitos reservados. Projeto e Prática I</p>
+</footer>
+  
+
+
+
+</body>
+</html>

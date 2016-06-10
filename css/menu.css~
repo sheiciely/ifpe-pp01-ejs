@@ -1,0 +1,38 @@
+/* Formatação do menu */
+
+nav#menu{
+	display: block; /*flutuar */
+}
+
+nav#menu ol{
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute; /*fica livre dentro do site */
+	top: -0,10px;
+	left: 800px;
+}
+
+nav#menu li{
+	display: inline-block; /* menu na horizontal */
+	background-color: #dddddd; /* cor do fundo */
+	padding: 10px;
+	margin: 2px;
+	transition: background-color 1s;
+}
+
+nav#menu li:hover{
+	background-color: #606060; /* efeito no botão do menu "passar o mouse" */
+}
+
+nav#menu h1{ /* título "menu princial" invisível */
+	display: none;
+}
+
+nav#menu a{
+	text-decoration: none;
+}
+
+nav#menu a:hover{ /*mudar a cor do fundo do menu ao passar o mouse */
+	color: white;
+	text-decoration: underline; /* é adc o sublinhado no link "ao passar o mouse" */
+	}

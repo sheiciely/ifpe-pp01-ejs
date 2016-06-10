@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head><title>Cadastar Cursos Disciplinas</title>
+	<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+			<link rel="stylesheet" type="text/css" href="../css/menupaginas.css"/>
+				<link rel="stylesheet" type="text/css" href="../css/formlunoprof.css"/>
+					<link rel="stylesheet" type="text/css" href="../css/chekradio.css"/>
+
+	</head>
+
+	<body>
+
+<div id="interface">
+			
+	<!--CABEÇALHO-->	
+	<header id="cabecalho">
+		<hgroup>
+			<h1>Sistema de Gestão Acadêmica - ACAD</h1>
+				<img id="icone" src="../imagens/secretaria.png">
+		
+			<h2>Instituto Federal de Ciência e Técnologia de Pernambuco</h2>
+		</hgroup>
+	</header>
+	
+		<!--FIMCABEÇALHO-->	
+		
+	
+		<section id="corpo1">
+			<nav id="menupag">
+			<ol>
+<li><a href="../index.html">Home</a></li>
+<li><a href="cadastrar_professor.html">Cadastrar Professor</a></li>
+<li><a href="emitir_historico.html">Emitir Histórico</a></li>
+<li><a href="realizar_matricula.html">Realizar Matrícula</a></li>
+			</ol>
+			</nav>
+	</section>			
+
+	
+	
+	
+	
+	<form action="../cadastro.html" name="cadastro" method="post" class="contact">
+
+	<fieldset class="contact-inner">
+ <legend><h1>Cadastrar Curso</h1></legend>
+ <table cellspacing="10">
+<tr>
+	<td>
+	<p class="contact-input">		
+		<label for="nome">Curso:</label>
+	</p>
+	</td>
+	<td align="left">
+	<p class="contact-input">
+		<input type="texto" name="nome" id="nome">
+	</p>
+	</td>
+	
+	<td>
+	<p class="contact-input">
+		<label for="nome">CH:</label>
+	</p>
+	</td>
+	<td>
+	<p class="contact-input">
+	<input type="texto" name="ch" id="ch">
+	</p>
+	</td>
+   <td>
+   <p class="contact-input">
+    <label for="modalidade">Modalidade:</label>
+	</p>
+   
+   <td align="left">
+    <select name="modalidade" class="select">
+            <option value="" selected></option>
+    <option value="SUB">Subsequente</option> 
+    <option value="LIC">Licenciatura</option> 
+    <option value="BAC">Bacharelado</option> 
+    <option value="EAD">EAD</option> 
+    <option value="POS">Pós-Graduação</option>
+	</select>
+	</p>
+	</td>
+	</tr>
+	<tr>
+	
+	<td>
+	</table>
+	</fieldset>
+	
+	
+	
+	
+	
+	        <!-- LISTA CHECKBOX -->
+	
+	
+	
+	<fieldset>
+	<table>
+	<form class="niceform">
+	<th><span>I Périodo</span></th>
+	<th><span>II Período</span></th>
+	<th><span>III Período</span></th>
+	<tr>
+
+	<td><input id="ckek" type="checkbox" name="dici" value="0">
+		<input type="text" name="nome" placeholder="Introdução a Qualidade"></td>             <td><input id="ckek" type="checkbox" name="dici" value="0">
+																									<input type="text" name="nome" placeholder="Gestão da Produção"></td>							<td><input id="ckek" type="checkbox" name="dici" value="0">
+																																																			<input type="text" name="nome" placeholder="Segurança do Trabalho"></td>
+	
+	<tr>
+	
+	<td><input id="ckek" type="checkbox" name="dici" value="0">
+		<input type="text" name="nome" placeholder="Estatística Básica"></td>  					<td><input id="ckek" type="checkbox" name="dici" value="0">
+																										<input type="text" name="nome" placeholder="Gestão da Qualidade e Metrologia"></td>			<td><input id="ckek" type="checkbox" name="dici" value="0">
+																																																			<input type="text" name="nome" placeholder="Controle Estatístico de Processos"></td>
+	
+	
+	<tr>
+	
+	<td><input id="ckek" type="checkbox" name="dici" value="0">
+		<input type="text" name="nome" placeholder="Português Instrumental"></td>				<td><input id="ckek" type="checkbox" name="dici" value="0">
+																										<input type="text" name="nome" placeholder="Gestão da Qualidade de Produtos e Serviços"></td>			<td><input id="ckek" type="checkbox" name="dici" value="0">
+																																																						<input type="text" name="nome" placeholder="Normatização e Legislação Aplicada"></td>
+	
+	<tr>
+	
+	<td><input id="ckek" type="checkbox" name="dici" value="0">
+		<input type="text" name="nome" placeholder="Introdução a Administração"></td>			<td><input id="ckek" type="checkbox" name="dici" value="0">
+																										<input type="text" name="nome" placeholder="Auditoria da Qualidade"></td>					<td><input id="ckek" type="checkbox" name="dici" value="0">
+																																																			<input type="text" name="nome" placeholder="Planejamento Estratêgico da Qualidade"></td>
+
+	<tr>
+	
+	<td><input id="ckek" type="checkbox" name="dici" value="0">
+		<input type="text" name="nome" placeholder="Informática Básica"></td>					<td><input id="ckek" type="checkbox" name="dici" value="0">
+																										<input type="text" name="nome" placeholder="Gestão de Projetos"></td>						<td><input id="ckek" type="checkbox" name="dici" value="0">
+																																																			<input type="text" name="nome" placeholder="Qualidade e Produtividade"></td>
+	
+	<tr>
+	
+	<td><input id="ckek" type="checkbox" name="dici" value="0">
+		<input type="text" name="nome" placeholder="Introdução a Qualidade"></td>				<td><input id="ckek" type="checkbox" name="dici" value="0">
+																										<input type="text" name="nome" placeholder="Planejamento de Operações"></td>				<td><input id="ckek" type="checkbox" name="dici" value="0">
+																																																			<input type="text" name="nome" placeholder="Tecnologia e Sistemas de Gestão da Qualidade"></td>
+																					
+	<tr>
+	
+	<td><input id="ckek" type="checkbox" name="dici" value="0">
+		<input type="text" name="nome" placeholder="Matemática Aplicada"></td>					<td><input id="ckek" type="checkbox" name="dici" value="0">
+																										<input type="text" name="nome" placeholder="Ferramentas da Qualidade"></td>					<td><input id="ckek" type="checkbox" name="dici" value="0">
+																																																			<input type="text" name="nome" placeholder="Inglês Instrumental"></td>
+
+	<tr>
+	
+	<td><input id="ckek" type="checkbox" name="dici" value="0">
+		<input type="text" name="nome" placeholder="Gestão Ambiental"></td>						<td></td>																		<td><input id="ckek" type="checkbox" name="dici" value="0">
+																																														<input type="text" name="nome" placeholder="Contabilidade"></td>
+	</tr>
+	<tr>
+	
+	<td><input id="ckek" type="checkbox" name="dici" value="0">
+			<input type="text" name="nome" placeholder="Gestão de Processos"></td>
+	
+
+	
+	
+	</p>
+	</td>
+	</table>
+</fieldset>
+	</tr>
+
+	<!-- FIM LISTA CHECKBOX -->
+	
+	
+	
+	<tr>
+
+	
+	<fieldset class="contact-inner">
+ <legend><h1>Cadastar Curso</h1></legend>
+ <table cellspacing="10">
+<tr>
+   <td>
+   <p class="contact-input">
+
+			
+	<label for="nome">Curso:</label>
+	</p>
+	</td>
+		<td align="left">
+		<p class="contact-input">
+	<input type="texto" name="nome" id="nome">
+	</p>
+	</td>
+   <td>
+	<p class="contact-input">
+	<label for="nome">CH:</label>
+	</p>
+	</td>
+		<td>
+	<p class="contact-input">
+	<input type="texto" name="ch" id="ch">
+	</p>
+	</td>
+   <td>
+   <p class="contact-input">
+    <label for="modalidade">Modalidade:</label>
+	</p>
+   
+   <td align="left">
+    <select name="modalidade" class="select">
+            <option value="" selected></option>
+    <option value="SUB">Subsequente</option> 
+    <option value="LIC">Licenciatura</option> 
+    <option value="BAC">Bacharelado</option> 
+    <option value="EAD">EAD</option> 
+    <option value="POS">Pós-Graduação</option>
+	</select>
+	</p>
+	</td>
+  </tr>
+ </table>
+ 
+ 
+         <!--- LISTA CHECKBOX -->
+ 
+ <tr>
+	
+	<td>
+	</table>
+	</fieldset>
+	
+	<fieldset>
+	<table>
+	<form class="niceform">
+	<th><span>I Périodo</span></th>
+	<th><span>II Período</span></th>
+	<th><span>III Período</span></th>
+	<tr>
+
+	<td><input id="ckek" type="checkbox" name="dici" value="0">
+		<input type="text" name="nome" placeholder="Português Instrumental"></td>             <td><input id="ckek" type="checkbox" name="dici" value="0">
+																									<input type="text" name="nome" placeholder="Sistemas Operacionais"></td>							<td><input id="ckek" type="checkbox" name="dici" value="0">
+																																																			<input type="text" name="nome" placeholder="Interação Humano-Computador"></td>
+	
+	<tr>
+	
+	<td><input id="ckek" type="checkbox" name="dici" value="0">
+		<input type="text" name="nome" placeholder="Fundamentos da Informática"></td>  					<td><input id="ckek" type="checkbox" name="dici" value="0">
+																										<input type="text" name="nome" placeholder="Segurança de Sitemas para Internet"></td>			<td><input id="ckek" type="checkbox" name="dici" value="0">
+																																																			<input type="text" name="nome" placeholder="Engenharia de Software"></td>
+	
+	
+	<tr>
+	
+	<td><input id="ckek" type="checkbox" name="dici" value="0">
+		<input type="text" name="nome" placeholder="Inglês Instrumental"></td>				<td><input id="ckek" type="checkbox" name="dici" value="0">
+																										<input type="text" name="nome" placeholder="Banco de Dados"></td>							<td><input id="ckek" type="checkbox" name="dici" value="0">
+																																																			<input type="text" name="nome" placeholder="Implantação e Administração de Serviços Web"></td>
+	
+	<tr>
+	
+	<td><input id="ckek" type="checkbox" name="dici" value="0">
+		<input type="text" name="nome" placeholder="Matemática Aplicada"></td>			<td><input id="ckek" type="checkbox" name="dici" value="0">
+																										<input type="text" name="nome" placeholder="Desenvolvimento para Web1"></td>					<td><input id="ckek" type="checkbox" name="dici" value="0">
+																																																			<input type="text" name="nome" placeholder="Desenvolvimento Web II"></td>
+
+	<tr>
+	
+	<td><input id="ckek" type="checkbox" name="dici" value="0">
+		<input type="text" name="nome" placeholder="Rede de Computadores"></td>					<td><input id="ckek" type="checkbox" name="dici" value="0">
+																										<input type="text" name="nome" placeholder="Ética Profissional e Cidadania"></td>						<td><input id="ckek" type="checkbox" name="dici" value="0">
+																																																			<input type="text" name="nome" placeholder="Empreendedorismo"></td>
+	
+	<tr>
+	
+	<td><input id="ckek" type="checkbox" name="dici" value="0">
+		<input type="text" name="nome" placeholder="Lógica de Programação e Estrutura de Dados"></td>				<td><input id="ckek" type="checkbox" name="dici" value="0">
+																										<input type="text" name="nome" placeholder="Programação Orientada a Objeto"></td>				<td><input id="ckek" type="checkbox" name="dici" value="0">
+																																																			<input type="text" name="nome" placeholder="Projeto e Prática II"></td>
+																					
+	<tr>
+	
+	<td><input id="ckek" type="checkbox" name="dici" value="0">
+		<input type="text" name="nome" placeholder="Segurança do Trabalho"></td>					<td><input id="ckek" type="checkbox" name="dici" value="0">
+																										<input type="text" name="nome" placeholder="Projeto e Prática I"></td>					
+																																																			
+
+	<tr>
+	
+	<td></td>						<td></td>																																	
+																																														
+	</tr>
+	<tr>
+	
+	<td></td>
+	
+
+	</table>
+</fieldset>
+ 
+ 
+ 
+<br>
+<fieldset class="contact-inner">
+
+<p class="contact-input">
+<input type="submit" name="envia" value="Enviar">
+</p>
+
+<p class="contact-input">
+<input type="reset" value="Limpar">
+</p>
+</fieldset>
+  </form>
+  
+  
+  
+  
+   <footer class="about">
+
+<p>Copyright &copy; 2016 - by EJS <br> Todos os direitos reservados. Projeto e Prática I</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

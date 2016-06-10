@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+		<title>ACAD</title>
+		<link rel="stylesheet" type="text/css" href="css/slideshow.css"/>
+			<script language="javascript" src="js/slideshow.js"></script>
+				<link rel="stylesheet" type="text/css" href="css/style.css"/>
+					<link rel="stylesheet" type="text/css" href="css/menu.css"/>
+					
+					
+							
+							<script language="javascript" src="js/icone.js"></script>
+								
+	</head>
+	
+	<body>
+	<nav id="menu">
+		<h1>Menu Principal</h1>
+			<ol>
+		<li onmouseover="mudaFoto('imagens/professor.png')" onmouseout="mudaFoto('imagens/acad.png')">
+		<a href="professor/menu_professor.html">Professor</a></li>
+		
+		<li onmouseover="mudaFoto('imagens/aluno.png')" onmouseout="mudaFoto('imagens/acad.png')">
+		<a href="aluno/menu_aluno.html">Aluno</a></li>
+		
+		<li onmouseover="mudaFoto('imagens/secretaria.png')" onmouseout="mudaFoto('imagens/acad.png')">
+		<a href="secretaria/menu_secretaria.html">Secretaria</a></li>
+		
+		<li onmouseover="mudaFoto('imagens/ajuda.png')" onmouseout="mudaFoto('imagens/acad.png')">
+		<a href="help.html">Ajuda</a></li>
+			</ol>
+	</nav>
+	
+	
+		
+	<div id="interface">
+			
+	<!--CABEÇALHO-->	
+	<header id="cabecalho">
+		<hgroup>
+			<h1>Sistema de Gestão Acadêmica - ACAD</h1>
+				<img id="icone" src="imagens/acad.png">
+		
+			<h2>Instituto Federal de Ciência e Técnologia de Pernambuco</h2>
+			<h3>Atualizado em 26/maio/2016</h3>
+		</hgroup>
+		
+
+	</header>
+	
+		<!--FIMCABEÇALHO-->
+		
+		<section id="corpo">
+		
+	
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="imagens/entrada.jpg" style="width:100%">
+    <div class="text">Bem Vindo</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="imagens/img_lights_wide.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="imagens/img_nature_wide.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div> 
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+
+
+
+
+<!--<figure class="foto-legenda">
+		<img src="imagens/entrada.jpg">
+		<figcaption>
+			Bem Vindo
+		</figcaption>
+			</figure> -->
+		
+	
+	</section>
+	<aside id="lateral">
+	
+	<p>Um sistema para integrar, flexibilizar e agilizar a gestão de instituições de ensino.
+	Tão importante quanto saber produzir informação é garantir acesso a ela de maneira ordenada, rápida,
+	fácil e confiável. O SGA é um instrumento capaz de, ao mesmo tempo, automatizar processos,
+	disponibilizar informações precisas, fornecer subsídios para definição de políticas de ensino,
+	facilitar a compreensão de metas estabelecidas e permitir maior controle das ações escolares.
+	Com isso, favorece a união entre as diversas equipes de trabalho e promove um ambiente
+	organizacional mais integrado, flexível e atento. Reduz de forma significativa os custos com a eliminação do retrabalho.</p>
+
+	</aside>
+	<footer id="a">
+	
+	<!-- linha que passa no rodapé-->
+	
+	
+	</footer>
+	<footer id="rodape">
+		
+		<p>Copyright &copy; 2016 - by EJS <br> Todos os direitos reservados. Projeto e Prática I</p>
+	</footer>
+	</div>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);	
+</script>
+	</body>
+</html>

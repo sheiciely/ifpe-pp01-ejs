@@ -1,0 +1,48 @@
+/* Começo Paginas estrangeiras */
+
+selection#corpo1{
+	display: block;
+	width: 500px;
+	float: left; /*flutuar do lado esquerdo*/
+	/*border-right: 1px solid #606060;
+	padding-right: 140px; */
+}
+
+/* Formatação do menu dos PORTAIS*/
+
+nav#menupag{
+	display: block; /*flutuar */
+}
+
+nav#menupag ol{
+	list-style: none;
+	text-transform: uppercase;
+	position: relative; /*fica livre dentro do site */
+	top: -10px;
+	left: 100px;
+}
+
+nav#menupag li{
+	display: inline-block; /* menu na horizontal */
+	background-color: #dddddd; /* cor do fundo */
+	padding: 10px;
+	margin: 2px;
+	transition: background-color 1s;
+}
+
+nav#menupag li:hover{
+	background-color: #606060; /* efeito no botão do menu "passar o mouse" */
+}
+
+nav#menupag h1{ /* título "menu princial" invisível */
+	display: none;
+}
+
+nav#menupag a{
+	text-decoration: none;
+}
+
+nav#menupag a:hover{ /*mudar a cor do fundo do menu ao passar o mouse */
+	color: white;
+	text-decoration: underline; /* é adc o sublinhado no link "ao passar o mouse" */
+	} 

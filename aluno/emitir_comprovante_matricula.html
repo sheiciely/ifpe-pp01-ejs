@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head><title>Emitir Comprovante Matricula</title>
+	<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+			<link rel="stylesheet" type="text/css" href="../css/menupaginas.css"/>
+				<link rel="stylesheet" type="text/css" href="../css/formlunoprof.css"/>
+					<link rel="stylesheet" type="text/css" href="../css/chekradio.css"/>
+					<script language="JavaScript" type="text/javascript" src="mascara_validacao.js"></script>
+
+	</head>
+
+	<body>
+
+<div id="interface">
+			
+	<!--CABEÇALHO-->	
+	<header id="cabecalho">
+		<hgroup>
+			<h1>Sistema de Gestão Acadêmica - ACAD</h1>
+				<img id="icone" src="../imagens/aluno.png">
+		
+			<h2>Instituto Federal de Ciência e Técnologia de Pernambuco</h2>
+		</hgroup>
+	</header>
+	
+		<!--FIMCABEÇALHO-->		
+
+		<section id="corpo1">
+			<nav id="menupag">
+			<ol>
+<li><a href="../index.html">Home</a></li>			
+<li><a href="alterar_dados_pessoais.html">Alterar Dados Pessoais</a></li>
+<li><a href="visualizar_notas_faltas.html">Vizualizar Notas e Faltas</a></li>
+			</ol>
+			</nav>
+	</section>	
+
+	
+	
+	
+	
+		<form action="../cadastro.html" name="cadastro" method="post" class="contact">
+
+		
+		<fieldset class="contact-inner">
+		<center><h1>Comprovante de Solicitação de Matrícula</h1></center>
+		</fieldset>
+		
+		<br>
+		
+		
+		<fieldset class="contact-inner">
+		<table cellspacing="10">
+		
+		<tr>
+		<td align="left">
+		
+		<img src="../imagens/usuario.jpg"></td><tr>
+		<td><input type="file" name="imagem"></td>
+		
+		</tr>
+		<tr>
+		
+		
+		<th>
+		<p class="contact-input">
+			<label for="nome">Matrícula:</label>
+		</p></th>
+		
+		<td align="left">
+		<p class="contact-input">
+			<input type="text" name="nome" value="000000" disabled>
+		</p></td>
+	
+		
+		
+		
+		
+		<th>
+		<p class="contact-input">
+			<label for="nome">Aluno:</label>
+		</p></th>
+		
+		<td align="left">
+		<p class="contact-input">
+			<input type="text" name="nome" value="Nome do Aluno" disabled>							
+																									
+		</p></td>																				
+																									
+	
+		
+		
+		<th>
+		<p class="contact-input">
+			<label for="nome">Curso:</label>
+		</p></th>
+		
+		<td align="left">
+		<p class="contact-input">
+			<input type="text" name="nome" value="Nome do Curso do Aluno" disabled>
+		</p></td>
+	
+		
+		</tr>
+		<tr>
+		
+		<th>
+		<p class="contact-input">
+			<label for="nome">Status:</label>
+		</p></th>
+		
+		<td align="left">
+		<p class="contact-input">
+			<input type="text" name="nome" value="ATIVO" disabled>
+		</p></td>																		
+		
+		
+		<th>
+		<p class="contact-input">
+			<label for="nome">Tipo:</label>
+		</p></th>
+		
+		<td align="left">
+		<p class="contact-input">
+		<input type="text" name="nome" value="Subsequente" disabled>
+		</p></td>
+	
+		</table>
+		</fieldset>
+		
+		
+		<br>
+		
+		
+		<fieldset class="contact-inner">
+		<center><table cellpadding="10px" cellspacing="10px" border="1">
+		
+		<th>Cód. Disciplina</th> <th>Componentes Curriculares</th>  <th>Período</th>  <th>C.H</th>  <th>Turma</th> <th>Situação</th><tr>
+		</tr>
+		<td>SDI022</td>  <td>Banco de Dados I</td>  <td>3º Período</td> <td>72h</td> <td>SDI03NA</td>  <td>Cursando</td><tr> 
+		</tr>
+		<td>SDI059</td>  <td>Estrutura de Dados</td>  <td>3º Período</td> <td>72h</td> <td>SDI03NA</td>  <td>Cursando</td><tr> 
+		</tr>
+		<td>SDI101</td>  <td>Matemática Discreta</td>  <td>3º Período</td> <td>72h</td> <td>SDI03NA</td>  <td>Cursando</td><tr> 
+		</tr>
+		<td>SDI122</td>  <td>Probabilidade e Estatística</td>  <td>3º Período</td> <td>72h</td> <td>SDI03NA</td>  <td>Cursando</td><tr> 
+		</tr>
+		<td>SDI168</td>  <td>Sociologia</td>  <td>3º Período</td> <td>72h</td> <td>SDI03NA</td>  <td>Cursando</td><tr> 
+		</tr>
+		
+		</table></center>
+		
+		<br>
+
+		
+		
+		<fieldset class="contact-inner">
+		<legend>Emitir</legend>
+		<table cellspacing="10">
+			
+				
+	<th>
+	<p class="contact-input">															
+		<label for="nome">Gerar em PDF:</label>	</th>
+			<td><input type="radio" name="emitir" id="hisescol"></td>							
+				
+										
+	<th>
+	<p class="contact-input">		
+		<label for="nome">Gerar em PDF e enviar por Email:</label></th>
+			<td><input type="radio" name="emitir" id="hisescol"></td>
+				<br>
+				
+				
+				</table>
+			</fieldset>
+	
+<p class="contact-input">
+<input type="submit" name="envia" value="Enviar">
+</p>
+
+<p class="contact-input">
+<input type="reset" value="Limpar">
+</p>
+</fieldset>
+  
+  
+  
+  
+  
+   <footer class="about">
+
+<p>Copyright &copy; 2016 - by EJS <br> Todos os direitos reservados. Projeto e Prática I</p>
+</footer>
+		
+		
+	
+
+
+			
+		
+<!--			<table border="2">
+				<form>
+				<tr>
+					<td>Gerar PDF</td>  <td><input type="radio" name="gerar" id="gpdf"></tr>
+				<tr>
+					<td>Gerar PDF e enviar por Email</td>  <td><input type="radio" name="gerar" id="gpdfe"></tr>
+				<tr>
+					<td>...</td>  <td><input type="radio" name="gerar" id="..."></tr>
+		</form>
+			</table>-->
+
+
+</body>
+</html>
