@@ -1,0 +1,65 @@
+create database acad;
+use acad;
+create table aluno(
+	id_Aluno varchar(8) not null,
+	nome varchar(30) not null,
+	turma varchar(20) not null,
+	primary key(id_Aluno)
+	)
+
+create table professor(
+	id_Professor varchar(8) not null,
+	nome varchar(30) not null,
+	disciplina varchar(20) not null,
+	primary key(id_Professor)
+	)
+
+create table secretaria(
+	id_Secretaria varchar(8) not null,
+	nome varchar(30) not null,
+	funcao varchar(20),
+	primary key(id_Secretaria)
+	)
+
+create table disiplina(
+	id_Disciplina varchar(8) not null,
+	id_Professor varchar(8) not null,
+	id_Aluno varchar(8) not null,
+	nome varchar(30) not null,
+	ch varchar(5),
+	primary key(id_Disciplina)
+	)
+
+create table curso(
+	id_Curso varchar(8) not null,
+	id_Professor varchar(8) not null,
+	id_Aluno varchar(8) not null,
+	nome varchar(30) not null,
+	ch varchar(5),
+	primary key(id_Curso)
+	)
+
+create table faltas(
+	id_Faltas varchar(8) not null,
+	id_Disciplina varchar(8) not null,
+	id_Professor varchar(8) not null,
+	id_Aluno varchar(8) not null,
+	primary key(id_Faltas)
+	)
+
+create table notas(
+	id_Notas varchar(8) not null,
+	id_Disciplina varchar(8) not null,
+	id_Professor varchar(8) not null,
+	id_Aluno varchar(8) not null,
+	primary key(id_Notas)
+	)
+
+create table projeto_pesquisa(
+	id_Projeto_pesquisa varchar(15) not null,
+	id_Professor varchar(8) not null,
+	nome varchar(30) not null,
+	primary key(id_Projeto_pesquisa)
+	)
+
+	

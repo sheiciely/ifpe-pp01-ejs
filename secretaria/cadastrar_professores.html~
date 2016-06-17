@@ -5,8 +5,9 @@
 		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
 			<link rel="stylesheet" type="text/css" href="../css/menupaginas.css"/>
 				<link rel="stylesheet" type="text/css" href="../css/formlunoprof.css"/>
-					<script language="JavaScript" type="text/javascript" src="../js/mascara_validacao.js"></script>
-
+					<!--<script language="JavaScript" type="text/javascript" src="../js/mascara_validacao.js"></script>-->
+<script language="JavaScript" type="text/javascript" src="../js/testevalidacao.js"></script>
+	
 	</head>
 
 	<body>
@@ -41,7 +42,7 @@
 	
 	
 	
-		<form action="../cadastro.html" name="cadastro" method="post" class="contact">	
+		<form action="cadastro.html" name="cadastro" method="post" class="contact">	
 		<!-- DADOS PESSOAIS-->
 <fieldset class="contact-inner">
  <legend><h1>Dados Pessoais</h1></legend>
@@ -75,8 +76,7 @@
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="date" name="tNascimento" id="cNascimento" onKeyPress="MascaraData(form1.data);"
-	maxlength="10" onBlur= "ValidaDataform1.data);">
+    <input type="date" name="tNascimento" id="cNascimento">
 	</p>
    </td>
 
@@ -135,8 +135,7 @@
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="tTel" id="cTel" onKeyPress="MascaraTelefone(form1.tel);" 
-maxlength="14"  onBlur="ValidaTelefone(form1.tel);"> 
+    <input type="text" name="tTel" id="cTel"> 
    </p>
    </td>
   
@@ -146,18 +145,18 @@ maxlength="14"  onBlur="ValidaTelefone(form1.tel);">
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="tCel" id="cCel" onKeyPress="MascaraTelefone(this);" maxlength="14"  onBlur="ValidaTelefone(this);">
+    <input type="text" name="tCel" id="cCel">
    </p>
    </td>
   
   <td>
    <p class="contact-input">
-    <label for="email">E-mail: </label>
+    <label for="cEmail">E-mail: </label>
 	</p>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="tEmail" c>
+    <input type="email" name="tEmail" id="cEmail">
 	</p>
    </td>
   
@@ -170,7 +169,7 @@ maxlength="14"  onBlur="ValidaTelefone(form1.tel);">
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="rg" id="rg" size="30" maxlength="12" onKeyPress="MascaraRG(form1.rg);" />
+    <input type="text" name="rg" id="rg" size="30" maxlength="12">
 </p>	
    </td>
    
@@ -207,7 +206,7 @@ maxlength="14"  onBlur="ValidaTelefone(form1.tel);">
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="cpf" onBlur="ValidarCPF(form1.cpf);" onKeyPress="MascaraCPF(form1.cpf);" maxlength="14">
+    <input type="text" name="cpf">
 	</p>
    </td>
    
@@ -266,8 +265,7 @@ maxlength="14"  onBlur="ValidaTelefone(form1.tel);">
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="cep" onKeyPress="MascaraCep(form1.cep)"
-	maxlength="10" onBlur="ValidaCep(form1.cep)">
+    <input type="text" name="cep">
 	</p>
    </td>
  
@@ -463,8 +461,7 @@ maxlength="14"  onBlur="ValidaTelefone(form1.tel);">
 	
    <td align="left">
    <p class="contact-input">
-    <input type="date" name="conclusao" onKeyPress="MascaraData(form1.data);"
-	maxlength="10" onBlur= "ValidaDataform1.data);">
+    <input type="date" name="conclusao">
 	</p>
    </td>
    </tr>
@@ -575,8 +572,7 @@ maxlength="14"  onBlur="ValidaTelefone(form1.tel);">
 	
    <td align="left">
    <p class="contact-input">
-    <input type="date" name="conclusao" onKeyPress="MascaraData(form1.data);"
-	maxlength="10" onBlur= "ValidaDataform1.data);">
+    <input type="date" name="conclusao">
 	</p>
    </td>
    <tr/>
@@ -688,8 +684,7 @@ maxlength="14"  onBlur="ValidaTelefone(form1.tel);">
 	
    <td align="left">
    <p class="contact-input">
-    <input type="date" name="conclusao" onKeyPress="MascaraData(form1.data);"
-	maxlength="10" onBlur= "ValidaDataform1.data);">
+    <input type="date" name="conclusao">
 	</p>
    </td>
  
@@ -774,7 +769,7 @@ maxlength="14"  onBlur="ValidaTelefone(form1.tel);">
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="email" name="tEmail" id="cEmail">
+    <input type="email" name="tEmail" id="cEmail" >
 	</p>
    </td>
 
@@ -824,8 +819,11 @@ maxlength="14"  onBlur="ValidaTelefone(form1.tel);">
 <br>
 
 
-<p class="contact-input">
-<input type="submit" name="envia" value="Enviar">
+<!--<p class="contact-input">
+<input type="submit" name="envia" value="Enviar">-->
+
+<input type="button" name="button" id="button" onclick="return validaForm()" value="OK" />
+
 </p>
 
 <p class="contact-input">

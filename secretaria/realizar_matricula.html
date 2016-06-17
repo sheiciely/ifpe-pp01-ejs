@@ -6,7 +6,7 @@
 			<link rel="stylesheet" type="text/css" href="../css/menupaginas.css"/>
 				<link rel="stylesheet" type="text/css" href="../css/formlunoprof.css"/>
 					<link rel="stylesheet" type="text/css" href="../css/chekradio.css"/>
-					<script language="JavaScript" type="text/javascript" src="mascara_validacao.js"></script>
+						<script language="JavaScript" type="text/javascript" src="../js/testevalidacao.js"></script>
      
 	</head>
 	
@@ -48,34 +48,33 @@
   <tr>
    <td>
    <p class="contact-input">
-    <label for="nome">Nome: </label>
+    <label for="cNome">Nome: </label>
 	</p>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="nome">
+    <input type="text" name="nome" id="cNome">
 	</p>
    </td>
    <td>
    <p class="contact-input">
-    <label for="sobrenome">Sobrenome: </label>
+    <label for="cSobrenome">Sobrenome: </label>
 	</p>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="sobrenome">
+    <input type="text" name="sobrenome" id="cSobrenome" required>
 	</p>
    </td>
   
   <td>
    <p class="contact-input">
-    <label for="nascimento">Nascimento: </label>
+    <label for="cNascimento">Nascimento: </label>
 	</p>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="date" name="nascimento" onKeyPress="MascaraData(form1.data);"
-	maxlength="10" onBlur= "ValidaDataform1.data);">
+    <input type="date" name="nascimento" id="cNascimento" required>
 	</p>
    </td>
 
@@ -90,7 +89,7 @@
    
    <td align="left">
    <p class="contact-input">
-   <select name="sexo" class="select" >
+   <select name="sexo" class="select" required>
             <option value="" selected></option>
     <option value="ac">Feminino</option> 
     <option value="al">Masculino</option> 
@@ -104,7 +103,7 @@
    
    <td align="left">
    <p class="contact-input">
-   <select name="estadocivil" class="select" >
+   <select name="estadocivil" class="select" required>
             <option value="" selected></option>
     <option value="ac">Solteiro(a)</option> 
     <option value="al">Casado(a)</option> 
@@ -122,7 +121,7 @@
    
    <td align="left">
    <p class="contact-input">
-   <input type="texto" name="filho" id="filhos" size="1" placeholder=0>
+   <input type="texto" name="filho" id="filhos" size="1" placeholder=0 required>
 	</p>
 	
   </tr>
@@ -130,34 +129,32 @@
   <tr>
   <td align="left">
    <p class="contact-input">
-		<label for="tel">Telefone: </label>
+		<label for="cTel">Telefone: </label>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="tel" onKeyPress="MascaraTelefone(form1.tel);" 
-maxlength="14"  onBlur="ValidaTelefone(form1.tel);"> 
+    <input type="text" name="tTel" id="cTel" required> 
    </p>
    </td>
   
   <td align="left">
    <p class="contact-input">
-		<label for="cel">Celular: </label>
+		<label for="cCel">Celular: </label>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="cel" onKeyPress="MascaraTelefone(form1.tel);" 
-maxlength="14"  onBlur="ValidaTelefone(form1.tel);">
+    <input type="text" name="cel" id="cCel" required>
    </p>
    </td>
   
   <td>
    <p class="contact-input">
-    <label for="email">E-mail: </label>
+    <label for="cEmail">E-mail: </label>
 	</p>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="email">
+    <input type="text" name="email" id="cEmail">
 	</p>
    </td>
   
@@ -165,36 +162,36 @@ maxlength="14"  onBlur="ValidaTelefone(form1.tel);">
    <td>
    
    <p class="contact-input">
-    <label for="rg">RG: </label>
+    <label for="cRg">RG: </label>
 	</p>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="rg" id="rg" size="30" maxlength="12" onKeyPress="MascaraRG(form1.rg);" />
+    <input type="text" name="rg" id="cRg" size="30" maxlength="12" required>
 </p>	
    </td>
    
    <td>
    
    <p class="contact-input">
-    <label for="expedicao">Expedição:</label>
+    <label for="cExpedicao">Expedição:</label>
 	</p>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="date" name="expedicao" id="expedicao">
+    <input type="date" name="expedicao" id="cExpedicao" required>
 </p>	
    </td>
 
    <td>
    
    <p class="contact-input">
-    <label for="rg">Orgão Expedidor: </label>
+    <label for="cOrgao">Orgão Expedidor: </label>
 	</p>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="orgao" id="orgao" size="13" maxlength="13">
+    <input type="text" name="orgao" id="cOrgao" size="13" maxlength="13" required>
 </p>	
    </td> 
    
@@ -202,36 +199,35 @@ maxlength="14"  onBlur="ValidaTelefone(form1.tel);">
  
    <td>
    <p class="contact-input">
-    <label>CPF:</label>
+    <label for="cCpf">CPF:</label>
 	</p>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="cpf" onBlur="ValidarCPF(form1.cpf);" 
-onKeyPress="MascaraCPF(form1.cpf);" maxlength="14">
+    <input type="text" name="cpf" id="cCpf" required>
 	</p>
    </td>
    
    
    <td>
    <p class="contact-input">
-    <label for="nascido">Naturalidade: </label>
+    <label for="cNascido">Naturalidade: </label>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="dia" id="nascido"> 
+    <input type="text" name="dia" id="cNascido" required> 
    </p>
    </td>
    
    
    <td>
    <p class="contact-input">
-    <label>Nacionalidade:</label>
+    <label for="cNaci">Nacionalidade:</label>
 	</p>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="nacionalidade" id="nacionalidade" size="9" maxlength="9">
+    <input type="text" name="nacionalidade" id="cNaci" size="9" maxlength="9" required>
 	</p>
    </td>
 
@@ -250,25 +246,24 @@ onKeyPress="MascaraCPF(form1.cpf);" maxlength="14">
  
    <td>
    <p class="contact-input">
-    <label for="cidade">Cidade: </label>
+    <label for="cCidade">Cidade: </label>
 	</p>
    </td>
  
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="cidade">
+    <input type="text" name="cidade" id="cCidade" required>
 	</p>
    </td>
   
   <td>
    <p class="contact-input">
-    <label for="cep">CEP: </label>
+    <label for="cCep">CEP: </label>
 	</p>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="cep" onKeyPress="MascaraCep(form1.cep)"
-	maxlength="10" onBlur="ValidaCep(form1.cep)">
+    <input type="text" name="cep" id="cCep" required>
 	</p>
    </td>
  
@@ -278,7 +273,7 @@ onKeyPress="MascaraCPF(form1.cpf);" maxlength="14">
 	</p>
    
    <td align="left">
-    <select name="estado" class="select">
+    <select name="estado" class="select" required>
             <option value="" selected></option>
     <option value="ac">Acre</option> 
     <option value="al">Alagoas</option> 
@@ -315,33 +310,33 @@ onKeyPress="MascaraCPF(form1.cpf);" maxlength="14">
  
  <td>
    <p class="contact-input">
-    <label for="bairro">Bairro: </label>
+    <label for="cBairro">Bairro: </label>
 	</p>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="bairro">
+    <input type="text" name="bairro" id="cBairro" required>
 	</p>
    </td>
  
    <td>
    <p class="contact-input">
-    <label for="rua">Rua:</label>
+    <label for="cRua">Rua:</label>
 	</p>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="rua">
+    <input type="text" name="rua" id="cRua" required>
 	</p>
    </td>
    <td>
    <p class="contact-input">
-    <label for="numero">Numero:</label>
+    <label for="cNum">Numero:</label>
 	</p>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="numero" size="4">
+    <input type="text" name="numero" id="cNum" size="4" required>
 	</p>
    </td>
   </tr>
@@ -357,11 +352,11 @@ onKeyPress="MascaraCPF(form1.cpf);" maxlength="14">
   <tr>
   <td>
    <p class="contact-input">
-    <label for="modalidade">Modalidade:</label>
+    <label for="cModa">Modalidade:</label>
 	</p>
    
    <td align="left">
-    <select name="modalidade" class="select">
+    <select name="modalidade" class="select" required>
             <option value="" selected></option>
     <option value="SUB">Subsequente</option> 
     <option value="LIC">Licenciatura</option> 
@@ -374,11 +369,11 @@ onKeyPress="MascaraCPF(form1.cpf);" maxlength="14">
 	
 	<td>
    <p class="contact-input">
-    <label for="curso">Curso:</label>
+    <label for="cCurso">Curso:</label>
 	</p>
    
    <td align="left">
-    <select name="curso" class="select">
+    <select name="curso" class="select" required>
             <option value="" selected></option>
     <option value="MED">Técnico em Qualidade</option> 
     <option value="GRA">Técnico em Informática para Internet</option>
@@ -389,11 +384,11 @@ onKeyPress="MascaraCPF(form1.cpf);" maxlength="14">
    
    <td>
    <p class="contact-input">
-    <label for="curso">Tarde: </label>
+    <label for="cTarde">Tarde: </label>
 	</p></td>
 	<td align="left">
    <p class="contact-input">
-    <input type="radio" name="turno" id="turno">
+    <input type="radio" name="turno" id="cTarde" required>
 	</p>
    </td>
 	
@@ -403,11 +398,11 @@ onKeyPress="MascaraCPF(form1.cpf);" maxlength="14">
 	
 	<td>
    <p class="contact-input">
-    <label for="curso">Noite: </label>
+    <label for="cNoite">Noite: </label>
 	</p></td>
    <td align="left">
    <p class="contact-input">
-    <input type="radio" name="turno" id="turno">
+    <input type="radio" name="turno" id="cNoite" required>
 	</p>
    </td>
    
@@ -457,23 +452,23 @@ onKeyPress="MascaraCPF(form1.cpf);" maxlength="14">
   
   <td>
    <p class="contact-input">
-    <label for="login">Login de usuário: </label>
+    <label for="cLogin">Login de usuário: </label>
 	</p>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="login">
+    <input type="text" name="login" id="cLogin" required>
 	</p>
    </td>
    
    <td>
    <p class="contact-input">
-    <label for="imagem">Imagem de perfil:</label>
+    <label for="cImagem">Imagem de perfil:</label>
 	</p>
    </td>
    <td>
    <p class="contact-input">
-    <input type="file" name="imagem" >
+    <input type="file" name="imagem" id="cImagem" required>
 	</p>
 
    </td>
@@ -483,23 +478,23 @@ onKeyPress="MascaraCPF(form1.cpf);" maxlength="14">
   
    <td>
    <p class="contact-input">
-    <label for="email">E-mail: </label>
+    <label for="cEmail">E-mail: </label>
 	</p>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="text" name="email">
+    <input type="text" name="email" id="cEmail">
 	</p>
    </td>
 
    <td>
    <p class="contact-input">
-    <label for="matricula">Matricula: </label>
+    <label for="cMatricula">Matricula: </label>
 	</p>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="matricula" name="matricula">
+    <input type="matricula" name="matricula" id="cMatricula" required>
 	</p>
    </td>
   </tr>
@@ -507,12 +502,12 @@ onKeyPress="MascaraCPF(form1.cpf);" maxlength="14">
   
   <td>
    <p class="contact-input">
-    <label for="pass">Senha: </label>
+    <label for="cPass">Senha: </label>
 	</p>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="password" name="pass">
+    <input type="password" name="pass" id="cPass" required>
 	</p>
    </td>
   
@@ -525,12 +520,12 @@ onKeyPress="MascaraCPF(form1.cpf);" maxlength="14">
   
    <td>
    <p class="contact-input">
-    <label for="passconfirm">Confirme a senha: </label>
+    <label for="cPassconfirm">Confirme a senha: </label>
 	</p>
    </td>
    <td align="left">
    <p class="contact-input">
-    <input type="password" name="passconfirm">
+    <input type="password" name="passconfirm" id="cPassconfim" required>
 	</p>
    </td>
   </tr>
@@ -539,7 +534,7 @@ onKeyPress="MascaraCPF(form1.cpf);" maxlength="14">
 
 
 <p class="contact-input">
-<input type="submit" name="envia" value="Enviar">
+<input type="button" name="button" id="button" onclick="return validaForm()" value="Enviar" />
 </p>
 
 <p class="contact-input">
