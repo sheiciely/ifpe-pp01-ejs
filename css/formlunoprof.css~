@@ -21,7 +21,7 @@ q:before, q:after {
 }*/
 
 label#p{
-    float: left;  clear: left;
+    float: right;  clear: right;
 	margin: 11px 20px 0 0;  width: 95px;
     text-align: left;  font-size: 16px;
 	color: #445668; 
